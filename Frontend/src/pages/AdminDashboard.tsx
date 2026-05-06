@@ -39,7 +39,7 @@ export default function AdminDashboard() {
   const [editingOrderId, setEditingOrderId] = useState<number | null>(null);
   const [tempOrderStatus, setTempOrderStatus] = useState<string>("");
 
-  const [showProductForm, setShowProductForm] = useState(false);
+  
   const [editProductForm, setEditProductForm] = useState<{
     id: number | null;
     name: string;
