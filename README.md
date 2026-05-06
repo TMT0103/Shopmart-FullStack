@@ -40,39 +40,30 @@ ADMIN: quản trị hệ thống
 Sử dụng JWT để xác thực:
 
 Authorization: Bearer <token>
-📂 Cấu trúc Backend
-backend/
-├── controller
-├── service
-├── repository
-├── entity
-├── security
-│   ├── JwtAuthenticationFilter
-│   ├── JwtTokenProvider
-│   └── SecurityConfig
-📂 Cấu trúc Frontend
-frontend/
-├── pages
-│   ├── Home
-│   ├── Cart
-│   ├── Orders
-│   ├── OrderDetail
-│   └── AdminDashboard
-├── components
-├── services
-⚙️ Cài đặt
-1. Backend
-cd backend
-mvn spring-boot:run
 
-Cấu hình database trong:
+Tạo file cấu hình
+📌 Quan trọng: File application.yml đã được ignore trong .gitignore
 
-application.properties
-2. Frontend
-cd frontend
-npm install
-npm run dev
+👉 Tạo file:
 
+src/main/resources/application.yml
+👉 Nội dung:
+
+server: port: 8080
+
+spring: datasource: url: jdbc:postgresql://localhost:5432/ecommerce username: your_username password: your_password
+
+jpa: hibernate: ddl-auto: update show-sql: true
+
+cloudinary: cloud-name: your_cloud_name api-key: your_api_key api-secret: your_api_secret
+
+app: jwt: secret: your_jwt_secret expiration-ms: 86400000
+
+3️⃣ Chạy database
+
+Tạo database PostgreSQL:
+
+sql CREATE DATABASE ecommerce;
 Chạy tại:
 
 http://localhost:5173
@@ -115,6 +106,7 @@ Order detail page riêng
 Thanh toán online (VNPay / Stripe)
 Upload ảnh sản phẩm
 Pagination
+
 Search nâng cao
 Review sản phẩm
 👨‍💻 Tác giả
