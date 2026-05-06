@@ -7,21 +7,21 @@ import lombok.Setter;
 
 import javax.annotation.processing.Generated;
 
+@Setter
 @Getter
 @Entity
 @Table(name = "categories")
 public class Category {
+
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Getter
-    @Setter
+
     @Column(nullable = false,unique = true)
     private String name;
 
-    public void setCategoryId(Long id) {
-        this.id = id;
-    }
+
 
 }
