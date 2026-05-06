@@ -1,0 +1,94 @@
+/* Container */
+.order-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.back-container {
+  max-width: 800px;
+  margin: 16px auto 0;
+  padding: 0 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.back-btn {
+  background: #1976d2;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.back-btn:hover {
+  background: #115293;
+}
+
+/* Card */
+.order-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.order-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Info */
+.order-info {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Item list */
+.order-items {
+  margin-top: 20px;
+}
+
+/* Item */
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.order-item:last-child {
+  border-bottom: none;
+}
+
+/* Product name */
+.product-name {
+  font-weight: 500;
+}
+
+/* Price */
+.product-price {
+  color: #e53935;
+  font-weight: bold;
+}
+
+/* Quantity */
+.product-qty {
+  color: #777;
+}
+
+/* Total */
+.order-total {
+  text-align: right;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #2e7d32;
+}

@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ecommerce
+    username: postgres
+    password: 123456
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+cloudinary:
+  cloud-name: dqnido4ds
+  api-key: 364376972785133
+  api-secret: Z21i_MdDWFHOMTD0Wq98ACjJ0Q8
+app:
+  jwt:
+    secret: dGhpcy1pcy1hLXN1cGVyLXNlY3JldC1rZXktZm9yLWp3dC0xMjM0NTY=
+    expiration-ms: 86400000
